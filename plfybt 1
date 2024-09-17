@@ -1,0 +1,31 @@
+# Задание 1
+
+integer_var = 11
+float_var = 33.4
+string_var = "vij34"
+list_var = [11, 1, 2, 11]
+tuple_var = (11, 2, 1)
+dict_var = {"Strenth": 4, "car_number": 3456}
+set_var = {34, 99, 666}
+bool_var = True
+print(integer_var, float_var, string_var, list_var, tuple_var, dict_var, set_var, bool_var)
+
+# Задание 2
+
+name = "Daniel"
+age = 17
+average_grade = 3, 69
+favorite_movies = ["Fast_and_furious", "drive", "american psycho"]
+personal_info = ("Zabusov", 20, 3.69)
+skills = {"eng": 6, "programming": 2}
+visited_countries = {"Russia", "Finland"}
+has_driver_license = False
+
+# Задание 3
+
+processor = "12th gen Intel core i7-12700KF"
+ram = 32
+internet_speed = 48.02
+masiv = ["12th gen Intel core i7-12700KF", 32, 48.02]
+print(masiv)
+
