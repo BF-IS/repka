@@ -1,0 +1,14 @@
+# ex1
+
+phrase = "Programming is fun!"
+print(phrase[1], phrase[5], phrase[18])
+
+# ex2
+
+numbers = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+print(numbers[3], numbers[-1], numbers[-6])
+
+# ex3
+
+cities = ("New York", "London", "Paris", "Tokyo", "Sydney")
+print(cities[2],cities[-3], cities[-5])
