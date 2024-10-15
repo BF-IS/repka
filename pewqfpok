@@ -12,3 +12,12 @@ print(numbers[3], numbers[-1], numbers[-6])
 
 cities = ("New York", "London", "Paris", "Tokyo", "Sydney")
 print(cities[2],cities[-3], cities[-5])
+
+#ex4
+quote = "The quick brown fox jumps over the lazy dog"
+print(quote[0:4], quote[10:19], quote[::2], quote[::-1])
+
+#ex5
+numbers = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+print(numbers[0:3],numbers[4:9], numbers[::2], numbers[::-1])
+
