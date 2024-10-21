@@ -1,0 +1,24 @@
+#ex1
+my_name = int(input('Введите ваш возраст'))
+friend_name = int(input('Введите возраст вашего друга'))
+print(my_name + friend_name)
+
+#ex2
+
+name = input("Введите ваше имя")
+name2 = input("Введите вашу фамилию")
+print(f'Привет {name} {name2}!')
+
+#ex3
+
+menu = "Меню:\n"\
+    "1. Суп\n"\
+    "2. Паста\n"\
+    "3. Десерт"
+print(menu)
+
+#ex4
+
+print(" ***\n","***\n","***\n")
+
+#ex 5
