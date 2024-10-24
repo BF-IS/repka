@@ -22,3 +22,9 @@ print(menu)
 print(" ***\n","***\n","***\n")
 
 #ex 5
+
+x = int(input("Введите число x: "))
+
+print(f"{x-3} {x-2} {x-1}")
+print(f"{x}")
+print(f"{x+3} {x+2} {x+1}")
