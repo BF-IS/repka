@@ -31,7 +31,7 @@ for shmot in shop:
 tasks = ["Сдать проект (Важная)", "Сходить в магазин", "Позвонить врачу (Важная)", "Убраться в комнате", "Подготовить отчёт"]
 
 for zadacha, task in enumerate(tasks, 1):
-    if "Важная" in tasks:
+    if "Важная" in task:
         print(f"{zadacha}!:{task}")
     else:
         print(f"{zadacha}:{task}")
