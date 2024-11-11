@@ -35,3 +35,18 @@ for zadacha, task in enumerate(tasks, 1):
         print(f"{zadacha}!:{task}")
     else:
         print(f"{zadacha}:{task}")
+
+#ex6
+answer = 0
+ch = int(input('Введите количество чисел:'))
+for num in range(ch):
+    print('Введите сами числа:')
+    x = int(input())
+    answer = answer + x
+print('Сумма чисел = ', answer)
+
+#ex7
+p = 1
+while p < 11:
+    print('Цикл сработал ', p, 'раз.')
+    p += 1
