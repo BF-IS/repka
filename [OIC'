@@ -50,3 +50,21 @@ p = 1
 while p < 11:
     print('Цикл сработал ', p, 'раз.')
     p += 1
+
+#ex 8
+while True:
+    command = input("Введите команду (w, a, s, d, stop): ")
+    if command == "w":
+        print("Шаг вперёд")
+    elif command == "a":
+        print("Шаг влево")
+    elif command == "s":
+        print("Шаг назад")
+    elif command == "d":
+        print("Шаг вправо")
+    elif command == "stop":
+        print("Выход")
+        break
+    else:
+        print("Неизвестная команда!")
+
