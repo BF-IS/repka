@@ -1,0 +1,46 @@
+#ex1
+
+def create_car(brand, color, max_speed):
+  return f"Марка: {brand} Цвет: {color} Макс.Скорость:{max_speed}км/ч"
+
+car_1 = create_car("ishak", "grey", "110")
+car_2 = create_car("daewoo_matiz", "red", "165")
+
+print(car_1)
+print(car_2)
+
+#ex2
+switch_1 = True
+switch_2 = False
+switch_3 = None
+
+def switch_check(switch):
+    if switch is True:
+        print("True работает")
+    elif switch is False:
+        print("False не работает")
+    else:
+        print(f"{switch} сломан")
+
+switch_check(switch_1)
+switch_check(switch_2)
+switch_check(switch_3)
+
+#ex3.1
+def treugolnik(side_1, side_2, side_3):
+    if (side_1+side_2>side_3)and(side_1+side_3>side_2)and(side_2+side_3>side_1):
+      if side_1 == side_2 == side_3:
+          print("Равносторонний")
+      elif side_1 == side_2 or side_1 == side_3 or side_2 == side_3:
+          print("Равнобедренный")
+      else:
+          print("Разносторонний")
+
+    else:
+      print("Невозможно составить треугольник")
+
+treugolnik(15, 15, 15)
+treugolnik(15, 20, 15)
+treugolnik(15, 20, 25)
+treugolnik(1, 2, 3)
+
