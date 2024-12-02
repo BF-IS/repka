@@ -9,6 +9,7 @@ car_2 = create_car("daewoo_matiz", "red", "165")
 print(car_1)
 print(car_2)
 
+
 #ex2
 switch_1 = True
 switch_2 = False
@@ -25,6 +26,7 @@ def switch_check(switch):
 switch_check(switch_1)
 switch_check(switch_2)
 switch_check(switch_3)
+
 
 #ex3.1
 def treugolnik(side_1, side_2, side_3):
@@ -43,4 +45,36 @@ treugolnik(15, 15, 15)
 treugolnik(15, 20, 15)
 treugolnik(15, 20, 25)
 treugolnik(1, 2, 3)
+
+
+#ex4
+def number_change(input_number, output_number):
+    steps = 0
+    while input_number != output_number:
+        if input_number < output_number:
+            input_number += 1
+        elif input_number > output_number:
+            input_number -= 1
+        steps += 1
+    return steps, input_number, output_number
+result = number_change(5, 10)
+print(number_change(2,10))
+print(number_change(5,1))
+print(number_change(3,3))
+
+
+#ex5
+player = 0
+def info_player():
+    global player
+    print(f"Игрок пробежал {player} км.")
+
+def run_player(km):
+    global player
+    player += km/2
+
+info_player()
+run_player(30)
+run_player(12.5)
+info_player()
 
