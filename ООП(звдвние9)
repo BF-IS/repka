@@ -33,7 +33,7 @@ chrctr_1.go_on_a_trip()
 chrctr_1.go_back()
 chrctr_1.start_training()
 chrctr_1.print_info()
-chrctr_1 = Create_character("John_Titor","Timetraveler",103,17)
+chrctr_1 = Create_character("John_Titor","Timetraveler",103,17)#fix
 chrctr_1.start_the_battle()
 
 
