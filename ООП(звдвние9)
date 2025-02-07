@@ -1,0 +1,64 @@
+
+#ex1
+
+class Create_character:
+    def __init__(self,name_pers:str,class_pers:str,hp_pers:int,damage_pers:int):
+        self.name_pers = name_pers
+        self.class_pers = class_pers
+        self.hp_pers = hp_pers
+        self.damage_pers = damage_pers
+
+    def print_info(self):
+        print(f"Ur Character:\n"
+              f"Name:{self.name_pers}, Class:{self.class_pers}\n"
+              f"HP:{self.hp_pers}, Damage:{self.damage_pers}")
+
+    def go_on_a_trip(self):
+        print(f"Character {self.name_pers} is on a trip, and now is unavaliable")
+
+    def go_back(self):
+        print(f"Character {self.name_pers} is going back!")
+
+    def start_training(self):
+        print(f"Character {self.name_pers} starts training, It`ll give +5 DMG and +3 HP")
+
+    def start_the_battle(self):
+        print(f"Ur character wanna fight!\n"
+        f"His indicators: HP={self.hp_pers}, DMG={self.damage_pers}")
+
+
+chrctr_1 = Create_character("John_Titor","Timetraveler",100,12)
+chrctr_1.print_info()
+chrctr_1.go_on_a_trip()
+chrctr_1.go_back()
+chrctr_1.start_training()
+chrctr_1.print_info()
+chrctr_1 = Create_character("John_Titor","Timetraveler",103,17)
+chrctr_1.start_the_battle()
+
+
+#ex2
+
+class Room:
+    items = []
+
+    def __init__(self,name):
+        self.name = name
+
+    def print_items(self):
+        print(f"there is all items in the room {self.name}: {','.join(self.items)}")
+
+    def add_item(self, *item):
+        self.items.extend(item)
+
+    def del_item(self,*item):
+        if item in self.items:
+            self.items.remove(item)
+            print(f"there is all items in the room: {','.join(self.items)}")
+        else:
+            print("there is not such item here")
+
+room1 = Room("Кухня")
+room1.add_item("Холодильник", "Стул", "Стол")
+room1.print_items()
+room1.del_item("Стул")
