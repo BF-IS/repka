@@ -39,6 +39,9 @@ chrctr_1.start_the_battle()
 
 #ex2
 
+
+#ex2
+
 class Room:
     items = []
 
@@ -58,7 +61,28 @@ class Room:
         else:
             print("there is not such item here")
 
-room1 = Room("Кухня")
-room1.add_item("Холодильник", "Стул", "Стол")
+    def find_item(self,*item):
+        if input() in self.items:
+            print("This item is in the room")
+        else:
+            print("There is not such item here")
+
+
+
+"""
+fix
+    def count_item(self,*item):
+        words = items.count()
+        count_of_items = items.count(words)
+        print(count_of_items)
+"""
+
+
+
+
+room1 = Room("Kitchen")
+room1.add_item("Fridge", "Chair", "Table")
 room1.print_items()
-room1.del_item("Стул")
+room1.del_item("Chair")
+room1.find_item()
+#room1.count_item()
