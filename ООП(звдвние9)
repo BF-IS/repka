@@ -1,5 +1,4 @@
-
-#ex1
+# ex1
 
 class Create_character:
     def __init__(self,name_pers:str,class_pers:str,hp_pers:int,damage_pers:int):
@@ -37,16 +36,12 @@ chrctr_1 = Create_character("John_Titor","Timetraveler",103,17)#fix
 chrctr_1.start_the_battle()
 
 
-#ex2
-
-
-#ex2
+# ex2
 
 class Room:
-    items = []
-
-    def __init__(self,name):
+    def __init__(self, name):
         self.name = name
+        self.items = []
 
     def print_items(self):
         print(f"there is all items in the room {self.name}: {','.join(self.items)}")
@@ -54,35 +49,42 @@ class Room:
     def add_item(self, *item):
         self.items.extend(item)
 
-    def del_item(self,*item):
+    def del_item(self, *item):
         if item in self.items:
             self.items.remove(item)
             print(f"there is all items in the room: {','.join(self.items)}")
         else:
             print("there is not such item here")
 
-    def find_item(self,*item):
+    def find_item(self,):
         if input() in self.items:
             print("This item is in the room")
         else:
             print("There is not such item here")
 
+    def count_item(self):
+        print(len(self.items))  # finally, I fixed it
 
+    def rm_rf_items(self):
+        self.items = []
+        print(f"All items removed from room")
 
-"""
-fix
-    def count_item(self,*item):
-        words = items.count()
-        count_of_items = items.count(words)
-        print(count_of_items)
-"""
-
-
+    def replace_item(self, old_item, new_item):
+        if old_item in self.items:
+            self.items.remove(old_item)
+            self.items.append(new_item)
+            print(f"Item {old_item} replaced {new_item}")
+        else:
+            print("There is not such item here")  # not working. I don't know why
 
 
 room1 = Room("Kitchen")
+room2 = Room("Basement")
 room1.add_item("Fridge", "Chair", "Table")
 room1.print_items()
 room1.del_item("Chair")
 room1.find_item()
-#room1.count_item()
+room1.count_item()
+room1.rm_rf_items()
+room1.replace_item("Table", "Bust of Lenin")  # fix
+
